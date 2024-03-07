@@ -24,9 +24,9 @@ public class DynamicMatrix {
 
 
 
-                }
+            }
 
             }
         }
-    }
+
 }
