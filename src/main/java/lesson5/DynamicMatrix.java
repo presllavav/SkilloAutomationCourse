@@ -20,7 +20,7 @@ public class DynamicMatrix {
             for(int j= 0; j<columns; j++) {
                 twoD[i][j]=s.nextInt();
 
-                List<int[]> values = new ArayList<int[]>();
+
 
 
 
