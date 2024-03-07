@@ -7,7 +7,7 @@ public class Age {
         int age = Integer.parseInt(s.nextLine());
 
         if  (age >= 16) {
-            System.out.println("You are eligible to work");
+            System.out.println("You are eligible to work..");
         }
         else {
             System.out.println("You are not eligible to work");
