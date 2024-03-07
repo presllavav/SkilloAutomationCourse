@@ -1,0 +1,10 @@
+### Win OS ###
+/.idea/
+/skilloAutomationHomeworks.iml
+/out/*
+### Unix OS ###
+.DS_Store
+\.idea\
+\skilloAutomationHomeworks.iml
+
+\out\*
