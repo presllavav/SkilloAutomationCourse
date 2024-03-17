@@ -1,6 +1,7 @@
 package main.java.Homework2.lesson8;
 
 abstract class Shape {
+
     public abstract void getArea();
     public  void getPerimeter(){
 
