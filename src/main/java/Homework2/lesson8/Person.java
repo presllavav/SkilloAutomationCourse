@@ -19,7 +19,7 @@ public class Person {
         this.language = language;
         this.job = job;
         this.nationality = nationality;
-        this.egn = egn;
+        this.egn = validateEGN(egn);
         this.country = country;
     }
     private String validateEGN(String egn) {
@@ -35,8 +35,8 @@ public class Person {
 
     private boolean contatinOnlyDigits(String egn) {
         try {
-            Long.parseLong(egn);
-            return true;
+            return long.parseLong(egn) > 0;
+
         } catch (NumberFormatException e) {
             return false;
         }
