@@ -23,14 +23,23 @@ public class Person {
         this.country = country;
     }
     private String validateEGN(String egn) {
-        if(egn.length() == 10) {
+        if (egn.length() == 10 && contatinOnlyDigits(egn)) {
             return egn;
-        }
-        else {
-            return null;
+        } else {
+            throw new IllegalArgumentException("The provided EGN is not valid! The EGN must contain only 10 digits!");
         }
 
 
+
+    }
+
+    private boolean contatinOnlyDigits(String egn) {
+        try {
+            Long.parseLong(egn);
+            return true;
+        } catch (NumberFormatException e) {
+            return false;
+        }
 
     }
 }
